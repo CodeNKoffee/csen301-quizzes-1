@@ -19,6 +19,7 @@ public class ComparingSequences {
         tmp.push(s2.pop());
         count++;
         if (count == size) {
+          // -- DEBUGGING -- STARTS HERE --------------
           System.out.println("S1 before restoration:");
           s1.printStack();
           System.out.println("S2 before restoration:");
@@ -28,15 +29,16 @@ public class ComparingSequences {
           System.out.println("DUMP for S1 before emptying:");
           dump.printStack();
           System.out.println(tmp.size() + " " + dump.size());
+          // -- DEBUGGING -- ENDS HERE --------------
           int tmpSize = tmp.size();
           int dumpSize = dump.size();
           for (int i = 0; i < tmpSize; i++) {
             s2.push(tmp.pop());
-            System.out.println("i: " + i);
+            System.out.println("i: " + i); // ---------------- DEBUGGING ----------------
           }
           for (int j = 0; j < dumpSize; j++) {
             s1.push(dump.pop());
-            System.out.println("j: " + j);
+            System.out.println("j: " + j); // ---------------- DEBUGGING ----------------
           }
           System.out.println("After Restoration");
           s1.printStack();
