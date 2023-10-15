@@ -1,5 +1,5 @@
 public class ArrayStack {
-	private int[] theStack;
+	int[] theStack;
 	private int maxSize;
 	private int top;
 
@@ -46,6 +46,4 @@ public class ArrayStack {
 			System.out.println();
 		}
 	}
-
-
 }
