@@ -49,6 +49,7 @@ public class ComparingSequences {
           //   s1.push(dump.pop());
           //   System.out.println("j: " + j);
           // }
+
           System.out.println("After Restoration");
           s1.printStack();
           s2.printStack();
@@ -71,9 +72,9 @@ public class ComparingSequences {
     s1.push(2);
     s1.push(1);
     s1.push(9);
-    s2.push(2);
     s2.push(1);
     s2.push(2);
+    s2.push(1);
     System.out.println(containsSequence(s1, s2));
   }
 }
