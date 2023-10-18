@@ -30,7 +30,7 @@ public class ComparingSequences {
           dump.printStack();
           System.out.println(tmp.size() + " " + dump.size());
           // -- DEBUGGING -- ENDS HERE --------------
-          int tmpSize = tmp.size();
+          int tmpSize = tmp.size(); 
           int dumpSize = dump.size();
           for (int i = 0; i < tmpSize; i++) {
             s2.push(tmp.pop());
@@ -40,6 +40,15 @@ public class ComparingSequences {
             s1.push(dump.pop());
             System.out.println("j: " + j); // ---------------- DEBUGGING ----------------
           }
+          // PREVIOUS IMPLEMENTATION
+          // for (int i = 0; i < tmp.size(); i++) {
+          //   s2.push(tmp.pop());
+          //   System.out.println("i: " + i); 
+          // }
+          // for (int j = 0; j < dump.size(); j++) {
+          //   s1.push(dump.pop());
+          //   System.out.println("j: " + j);
+          // }
           System.out.println("After Restoration");
           s1.printStack();
           s2.printStack();
